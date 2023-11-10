@@ -1,11 +1,11 @@
 <script setup>
 definePageMeta({
-  // middleware: ['logger']
+  middleware: ['auth']
 })
 </script>
 
 <template>
   <div>
-    <MovieSearch />
+    <h1>Admin Page</h1>
   </div>
 </template>

@@ -9,5 +9,9 @@ export default defineNuxtConfig({
     public: {
       apiBaseUrl: process.env.NUXT_API_BASE_URL || '/api'
     }
-  }
+  },
+  modules: ['@pinia/nuxt'],
+  pinia: {
+    storesDirs: ['./stores/**'],
+  },
 })
