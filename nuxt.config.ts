@@ -10,8 +10,11 @@ export default defineNuxtConfig({
       apiBaseUrl: process.env.NUXT_API_BASE_URL || '/api'
     }
   },
-  modules: ['@pinia/nuxt'],
+  modules: ['@pinia/nuxt', '@nuxt/image'],
   pinia: {
     storesDirs: ['./stores/**'],
   },
+  image: {
+    domains: ['m.media-amazon.com']
+  }
 })
